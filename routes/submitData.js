@@ -1,11 +1,12 @@
 import express from 'express'
 
-import cardInfo from "../controller/cardInfo.js"
+import Card from "../controller/cardInfo.js"
 
 const router = express.Router();
 
 router.route('/')
-    .post(cardInfo);
+    .post(Card.submitInfo)
+    .get(Card.getInfo)
 // router.route('/')
 //     .post(blog.addBlog)
 //     .get(blog.getBlog)
