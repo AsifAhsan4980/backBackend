@@ -36,6 +36,6 @@ app.use(errorHandler);
 
 //api
 app.use('/media/img/',express.static('media/img'));
-app.use('/cardInfo', cardDataSubmitRoute)
+app.use('/cardInfo/', cardDataSubmitRoute)
 
 export default app
