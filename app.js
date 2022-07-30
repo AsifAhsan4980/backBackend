@@ -11,7 +11,7 @@ import cardDataSubmitRoute from './routes/submitData.js'
 
 //cors setup
 const corsOptions ={
-    origin:'*',
+    origin:'https://soft-lily-e3c8c5.netlify.app/',
     credentials:false,
     optionsSuccessStatus: 200, // For legacy browser support
     methods: "GET, PUT, POST",
