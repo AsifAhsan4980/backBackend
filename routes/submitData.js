@@ -5,7 +5,7 @@ import cardInfo from "../controller/cardInfo.js"
 const router = express.Router();
 
 router.route('/')
-    .post(cardInfo)
+    .post(cardInfo);
 // router.route('/')
 //     .post(blog.addBlog)
 //     .get(blog.getBlog)
