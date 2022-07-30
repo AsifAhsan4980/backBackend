@@ -15,7 +15,7 @@ import app from './app.js'
 
 connectDB().then(r => console.log("MongoDB connected"))
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 80
 
 const server = app.listen(PORT, () =>
     console.log(`Sever running on port ${PORT}`)
