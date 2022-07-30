@@ -1,8 +1,17 @@
 import dotenv from 'dotenv'
 dotenv.config({path: "./config.env"})
 import connectDB from './config/db.js'
+// import cors from "cors";
 
 import app from './app.js'
+
+// const corsOptions ={
+//     origin:'*',
+//     credentials:true,            //access-control-allow-credentials:true
+//     optionSuccessStatus:200,
+// }
+//
+// app.use(cors(corsOptions))
 
 connectDB().then(r => console.log("MongoDB connected"))
 
