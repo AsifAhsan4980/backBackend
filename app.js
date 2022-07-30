@@ -12,7 +12,10 @@ import cardDataSubmitRoute from './routes/submitData.js'
 //cors setup
 const corsOptions ={
     origin:'*',
-    credentials:true,            //access-control-allow-credentials:true
+    credentials:false,
+    optionsSuccessStatus: 200, // For legacy browser support
+    methods: "GET, PUT, POST",
+    // access-control-allow-credentials:true,
     optionSuccessStatus:200,
 }
 
